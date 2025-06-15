@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VIVA</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/login.css" />
+</head>
+<body>
+  <!-- Login Modal -->
+  <div id="login-modal">
+    <div class="modal-content">
+      <form id="login-form">
+        <h2>Anmelden</h2>
+        <input type="email" id="auth-email" placeholder="E-Mail" required />
+        <input type="password" id="auth-password" placeholder="Passwort" required />
+        <button type="submit">Einloggen</button>
+        <p>Noch kein Konto? <a href="#" id="show-register">Registrieren</a></p>
+      </form>
+      <form id="register-form">
+        <h2>Registrieren</h2>
+        <input type="email" id="reg-email" placeholder="E-Mail" required />
+        <input type="password" id="reg-password" placeholder="Passwort" required />
+        <button type="submit">Registrieren</button>
+        <p>Bereits registriert? <a href="#" id="show-login">Zum Login</a></p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <h1 class="logo">
+      <img src="bilder/VIVA-Logo.png" alt="VIVA Logo" />
+    </h1>
+    <nav class="category-nav">
+      <button class="category-button active" data-category="Restaurant">
+        <img src="bilder/icons/besteck-weiss.png" alt="Restaurant Icon" />
+        Restaurant
+      </button>
+      <button class="category-button" data-category="Bars">
+        <img src="bilder/icons/cocktail-blau.png" alt="Bar Icon" />
+        Bars
+      </button>
+      <button class="category-button" data-category="Wellness">
+        <img src="bilder/icons/wellness-blau.png" alt="Wellness Icon" />
+        Wellness
+      </button>
+      <button class="category-button" data-category="Kultur">
+        <img src="bilder/icons/party-blau.png" alt="Kultur Icon" />
+        Kultur
+      </button>
+    </nav>
+  </header>
+
+  <!-- Dynamisch gefüllte Cards -->
+  <main class="main-content">
+    <div class="card-wrapper"></div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a href="index.html" class="footer-icon">
+      <img src="bilder/icons/V-Symbol.png" alt="Startseite Icon" />
+    </a>
+
+    <a href="gespeichert.html" class="footer-icon" id="footer-save-link">
+      <img src="bilder/icons/gespeichert-schwarz.png" alt="Gespeichert Icon" id="footer-save-icon" />
+    </a>
+
+    <a href="#" class="footer-icon" id="logoutBtn">
+      <img src="bilder/icons/profil-footer.png" alt="Logout Icon" />
+    </a>
+  </footer>
+
+  <!-- Overlay-Template -->
+  <template id="overlay-template">
+    <div class="overlay">
+      <div class="overlay-content">
+        <button class="close-button">
+          <img src="bilder/icons/schliessen.png" alt="Schliessen Icon" />
+        </button>
+        <div class="slideshow">
+          <button class="slide-prev">
+            <img src="bilder/icons/pfeil-links.png" alt="Zurück" />
+          </button>
+          <!-- Slides werden hier eingefügt -->
+          <button class="slide-next">
+            <img src="bilder/icons/pfeil-rechts.png" alt="Weiter" />
+          </button>
+        </div>
+        <h2 class="overlay-title"></h2>
+        <p class="overlay-description"></p>
+        <button class="zum-angebot-button">Zum Angebot</button>
+        <button class="save-button">
+          <img src="bilder/icons/gespeichert-weiss.png" alt="Merken Icon" />
+        </button>
+      </div>
+    </div>
+  </template>
+
+  <script src="js/script.js" defer></script>
+  <script src="js/login.js" defer></script>
+  <script src="js/logout.js" defer></script>
+</body>
+</html>
