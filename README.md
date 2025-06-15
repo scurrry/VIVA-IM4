@@ -25,7 +25,7 @@ Wir haben uns zu Beginn überlegt, welche Bedürfnisse und Nutzungsgewohnheiten 
 ## Hosting & Infrastruktur
 
 - **Webhost:** Infomaniak  
-  - Gute Dokumentation
+  - Verständlicher Webhost
   - Einfaches SFTP-Handling mit VS Code
   - Integration von MySQL via phpMyAdmin
 - **Deployment:** Visual Studio Code + `sftp.json`
@@ -35,7 +35,7 @@ Wir haben uns zu Beginn überlegt, welche Bedürfnisse und Nutzungsgewohnheiten 
 
 ## Was gut lief
 
-- Aufbau der Dateistruktur (HTML, CSS, JS)
+- Aufbau der Dateistruktur (HTML, CSS, JS, PHP)
 - Datenbankverbindung zwischen `phpMyAdmin` und der Webanwendung
 - Anzeigen von Angeboten aus der Datenbank
 - Interaktive Funktionen wie Filterung und Favoriten
@@ -48,18 +48,18 @@ Wir haben uns zu Beginn überlegt, welche Bedürfnisse und Nutzungsgewohnheiten 
 - **Login & Logout-Logik**:  
   - Das Login-Popup verschwand nach Login nicht korrekt  
   - Sessions gingen beim Seitenwechsel verloren  
-  - Unterschiedliche JS-Files und Session-Handling in PHP mussten exakt aufeinander abgestimmt werden
+  - Fehler war in den vielen verschiedenen Dateien schwer zu finden 
 
 - **Projektstruktur**:  
   - Zu Beginn zu viele unsortierte Dateien  
-  - Ordnerstruktur wurde überarbeitet (`api`, `css`, `js`, `system`, `bilder`, ...)
+  - Ordnerstruktur wurde überarbeitet und vereinfacht (`api`, `css`, `js`, `system`, `bilder`, ...)
 
 - **Verlorene Dateien**:  
-  - `gespeichert.html` ging zwischendurch verloren und musste rekonstruiert werden
+  - `gespeichert.html` funktionierte zwischendurch nicht mehr und musste rekonstruiert werden
 
 ---
 
-## Datenbankstruktur
+## Datenbankstruktur `phpMyAdmin`
 
 ### `users`
 
@@ -112,5 +112,5 @@ Wir haben uns zu Beginn überlegt, welche Bedürfnisse und Nutzungsgewohnheiten 
 ## Fazit
 
 Wir konnten viel über **Datenbankintegration**, **User-Authentifizierung**, **Dateistrukturierung** und **modulares Frontend** lernen.  
-Obwohl technische Hürden auftraten, haben wir die meisten Herausforderungen gemeinsam gelöst und eine funktionale, zielgruppengerechte Anwendung entwickelt.
+Obwohl technische Hürden auftraten, haben wir die alle Herausforderungen gemeinsam gelöst und eine funktionale, zielgruppengerechte Anwendung entwickelt. Wir sind sehr zufrieden mit dem Endprodukt, wir hoffen ihr auch. :)
 
