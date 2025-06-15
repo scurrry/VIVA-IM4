@@ -111,6 +111,6 @@ Wir haben uns zu Beginn überlegt, welche Bedürfnisse und Nutzungsgewohnheiten 
 
 ## Fazit
 
-Wir konnten viel über **Datenbankintegration**, **User-Authentifizierung**, **Dateistrukturierung** und **modulares Frontend** lernen.  
-Obwohl technische Hürden auftraten, haben wir die alle Herausforderungen gemeinsam gelöst und eine funktionale, zielgruppengerechte Anwendung entwickelt. Wir sind sehr zufrieden mit dem Endprodukt, wir hoffen ihr auch. :)
+Wir konnten viel über **Datenbankintegration**, **User-Authentifizierung**, **Dateistrukturierung** und **modulares Frontend** lernen. 
+Wir haben sehr viel Zeit und Nerven in die Erstellung der App investiert. Obwohl technische Hürden auftraten, haben wir die alle Herausforderungen gemeinsam gelöst und eine funktionale, zielgruppengerechte Anwendung entwickelt. Wir sind sehr zufrieden mit dem Endprodukt, wir hoffen ihr auch. :)
 
